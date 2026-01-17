@@ -67,5 +67,5 @@ document.getElementById("answer_button_4").addEventListener("click",function() {
   } else {
     answer_4 = "Please select A, B, C, or D for your answer (Not your grade).";
   }
-  document.getElementById("answer_check_3").innerHTML = answer_3
+  document.getElementById("answer_check_4").innerHTML = answer_4
 });
