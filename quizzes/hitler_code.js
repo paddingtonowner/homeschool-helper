@@ -51,3 +51,21 @@ document.getElementById("answer_button_3").addEventListener("click",function() {
   }
   document.getElementById("answer_check_3").innerHTML = answer_3
 });
+
+var input_4;
+var answer_4;
+document.getElementById("answer_button_4").addEventListener("click",function() {
+  input_4 = document.getElementById("answer_4").value;
+  if (input_4 === 'A') {
+    answer_4 = "Wrong answer. Try again.";
+  } else if (input_4 === 'C') {
+    answer_4 = "Wrong answer. Try again.";
+  } else if (input_4 == 'D') {
+    answer_4 = "Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed. The Italians had a similar feeling. Mussolini's famous quote: 'Everything inside the state; nothing outside the state; nothing against the state.'";
+  } else if (input_4 === 'B') {
+    answer_4 = "Wrong answer. Try again.";
+  } else {
+    answer_4 = "Please select A, B, C, or D for your answer (Not your grade).";
+  }
+  document.getElementById("answer_check_3").innerHTML = answer_3
+});
