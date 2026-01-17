@@ -33,3 +33,21 @@ document.getElementById("answer_button_2").addEventListener("click",function() {
   }
   document.getElementById("answer_check_2").innerHTML = answer_2
 });
+
+var input_3;
+var answer_3;
+document.getElementById("answer_button_3").addEventListener("click",function() {
+  input_3 = document.getElementById("answer_3").value;
+  if (input_3 === 'A') {
+    answer_3 = "Correct! Hitler thought that the <em>true</em> Germans had been too watered down with other races.";
+  } else if (input_3 === 'C') {
+    answer_3 = "Wrong answer. Try again.";
+  } else if (input_3 == 'D') {
+    answer_3 = "Wrong answer. Try again.";
+  } else if (input_3 === 'B') {
+    answer_3 = "Wrong answer. Try again.";
+  } else {
+    answer_3 = "Please select A, B, C, or D for your answer (Not your grade).";
+  }
+  document.getElementById("answer_check_3").innerHTML = answer_3
+});
