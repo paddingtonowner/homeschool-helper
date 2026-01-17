@@ -15,3 +15,23 @@ document.getElementById("answer_button_1").addEventListener("click",function() {
   }
   document.getElementById("answer_check_1").innerHTML = answer_1;
 });
+
+var input_2;
+var answer_2;
+document.getElementById("answer_button_2").addEventListener("click",function() {
+  input_1 = document.getElementById("answer_2").value;
+  if (input_2 === 'A') {
+    answer_2 = "Wrong answer. Try again.";
+  } else if (input_2 === 'C') {
+    answer_2 = "Wrong answer. Try again.";
+  } else if (input_2 == 'D') {
+    answer_2 = "Wrong answer. Try again.";
+  } else if (input_2 === 'B') {
+    answer_2 = "Nice job!";
+  } else {
+    answer_2 = "Please select A, B, C, or D for your answer (Not your grade).";
+  }
+  document.getElementById("answer_check_2").innerHTML = answer_2
+});
+  document.getElementById("answer_check_1").innerHTML = answer_1;
+});
