@@ -33,5 +33,3 @@ document.getElementById("answer_button_2").addEventListener("click",function() {
   }
   document.getElementById("answer_check_2").innerHTML = answer_2
 });
-  document.getElementById("answer_check_1").innerHTML = answer_1;
-});
