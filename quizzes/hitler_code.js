@@ -25,9 +25,9 @@ document.getElementById("answer_button_2").addEventListener("click",function() {
   } else if (input_2 === 'C') {
     answer_2 = "Wrong answer. Try again.";
   } else if (input_2 == 'D') {
-    answer_2 = "Wrong answer. Try again.";
+    answer_2 = "Nice job remembering the alliances!";
   } else if (input_2 === 'B') {
-    answer_2 = "Nice job!";
+    answer_2 = "Wrong answer. Try again.";
   } else {
     answer_2 = "Please select A, B, C, or D for your answer (Not your grade).";
   }
