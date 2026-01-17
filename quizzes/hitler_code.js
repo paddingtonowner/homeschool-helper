@@ -19,7 +19,7 @@ document.getElementById("answer_button_1").addEventListener("click",function() {
 var input_2;
 var answer_2;
 document.getElementById("answer_button_2").addEventListener("click",function() {
-  input_1 = document.getElementById("answer_2").value;
+  input_2 = document.getElementById("answer_2").value;
   if (input_2 === 'A') {
     answer_2 = "Wrong answer. Try again.";
   } else if (input_2 === 'C') {
