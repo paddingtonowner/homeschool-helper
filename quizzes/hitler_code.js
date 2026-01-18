@@ -61,11 +61,29 @@ document.getElementById("answer_button_4").addEventListener("click",function() {
   } else if (input_4 === 'C') {
     answer_4 = "Wrong answer. Try again.";
   } else if (input_4 == 'D') {
-    answer_4 = "Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed.<br>The Italians had a similar feeling. Mussolini's famous quote: <em>'Everything inside the state; nothing outside the state; nothing against the state.'</em>";
+    answer_4 = "Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed.";
   } else if (input_4 === 'B') {
     answer_4 = "Wrong answer. Try again.";
   } else {
     answer_4 = "Please select A, B, C, or D for your answer (Not your grade).";
   }
   document.getElementById("answer_check_4").innerHTML = answer_4
+});
+
+var input_5;
+var answer_5;
+document.getElementById("answer_button_5").addEventListener("click",function() {
+  input_5 = document.getElementById("answer_5").value;
+  if (input_5 === 'A') {
+    answer_5 = "Wrong answer. Try again.";
+  } else if (input_5 === 'D') {
+    answer_5 = "Wrong answer. Try again.";
+  } else if (input_5 == 'C') {
+    answer_5 = "Correct! Hitler thought: 'A few human lives don't matter when the nation being strong is at stake'.<br>The Italians had a similar feeling. Mussolini's famous quote: <em>'Everything inside the state; nothing outside the state; nothing against the state.'</em>";
+  } else if (input_5 === 'B') {
+    answer_5 = "Wrong answer. Try again.";
+  } else {
+    answer_5 = "Please select A, B, C, or D for your answer (Not your grade).";
+  }
+  document.getElementById("answer_check_5").innerHTML = answer_5
 });
