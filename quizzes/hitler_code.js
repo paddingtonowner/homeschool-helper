@@ -1,89 +1,117 @@
-var input_1;
-var answer_1;
+var input;
+var answer;
+
+var answered_1 = "False";
 document.getElementById("answer_button_1").addEventListener("click",function() {
-  input_1 = document.getElementById("answer_1").value;
-  if (input_1 === 'A') {
-    answer_1 = "<p class='wrong-answer'>The Germans were the ones who sank the <em>Lucitania</em>, but they might not have considered it an innocent ship. Try again.</p>";
-  } else if (input_1 === 'C') {
-    answer_1 = "<p class='wrong-answer'>The Americans did wish the Germans Merry Christmas, but this probably did not breed resent.</p>";
-  } else if (input_1 == 'D') {
-    answer_1 = "<p class='wrong-answer'>The Americans did trespass on the Germans' territory, but this probably wasn't the one that bred the most resentment. Try again.</p>";
-  } else if (input_1 === 'B') {
-    answer_1 = "<p class='correct-answer'>Correct! The Americans, after being forced into war, went on to win, and bred a lot of resentment in doing so.</p>";
-  } else {
-    answer_1 = "Please select A, B, C, or D for your answer (Not your grade).";
-  }
-  document.getElementById("answer_check_1").innerHTML = answer_1;
+  if (answered_1 === "False") {
+    input = document.getElementById("answer_1").value;
+    if (input === 'A') {
+      answer = "<p class='wrong-answer'>The Germans were the ones who sank the <em>Lucitania</em>, but they might not have considered it an innocent ship. Try again.</p>";
+      answered_1 = "True";
+    } else if (input === 'C') {
+      answer = "<p class='wrong-answer'>The Americans did wish the Germans Merry Christmas, but this probably did not breed resent.</p>";
+      answered_1 = "True";
+    } else if (input === 'D') {
+      answer = "<p class='wrong-answer'>The Americans did trespass on the Germans' territory, but this probably wasn't the one that bred the most resentment. Try again.</p>";
+      answered_1 = "True";
+    } else if (input === 'B') {
+      answer = "<p class='correct-answer'>Correct! The Americans, after being forced into war, went on to win, and bred a lot of resentment in doing so.</p>";
+      answered_1 = "True";
+    } else {
+      answer = "Please select A, B, C, or D for your answer (Not your grade).";
+    }
+    document.getElementById("answer_check_1").innerHTML = answer;
+  };
 });
 
-var input_2;
-var answer_2;
+var answered_2 = "False";
 document.getElementById("answer_button_2").addEventListener("click",function() {
-  input_2 = document.getElementById("answer_2").value;
-  if (input_2 === 'A') {
-    answer_2 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_2 === 'C') {
-    answer_2 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_2 == 'D') {
-    answer_2 = "<p class='correct-answer'>Nice job remembering the alliances! The Italians had a similar belief to the Germans', but the Japanese just saw the alliance as a helpful weapon.</p>";
-  } else if (input_2 === 'B') {
-    answer_2 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else {
-    answer_2 = "Please select A, B, C, or D for your answer (Not your grade).";
-  }
-  document.getElementById("answer_check_2").innerHTML = answer_2
+  if (answered_2 === "False") {
+    input = document.getElementById("answer_2").value;
+    if (input === 'A') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_2 = "True";
+    } else if (input === 'C') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_2 = "True";
+    } else if (input === 'D') {
+      answer = "<p class='correct-answer'>Nice job remembering the alliances! The Italians had a similar belief to the Germans', but the Japanese just saw the alliance as a helpful weapon.</p>";
+      answered_2 = "True";
+    } else if (input === 'B') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_2 = "True";
+    } else {
+      answer = "Please select A, B, C, or D for your answer (Not your grade).";
+    }
+    document.getElementById("answer_check_2").innerHTML = answer
+  };
 });
 
-var input_3;
-var answer_3;
+var answered_3 = "False";
 document.getElementById("answer_button_3").addEventListener("click",function() {
-  input_3 = document.getElementById("answer_3").value;
-  if (input_3 === 'A') {
-    answer_3 = "<p class='correct-answer'>Correct! Hitler thought that the <em>true</em> Germans had been too watered down with other races.</p>";
-  } else if (input_3 === 'C') {
-    answer_3 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_3 == 'D') {
-    answer_3 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_3 === 'B') {
-    answer_3 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else {
-    answer_3 = "Please select A, B, C, or D for your answer (Not your grade).";
-  }
-  document.getElementById("answer_check_3").innerHTML = answer_3
+  if (answered_3 === "False") {
+    input = document.getElementById("answer_3").value;
+    if (input === 'A') {
+      answer = "<p class='correct-answer'>Correct! Hitler thought that the <em>true</em> Germans had been too watered down with other races.</p>";
+      answered_3 = "True";
+    } else if (input === 'C') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_3 = "True";
+    } else if (input === 'D') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_3 = "True";
+    } else if (input === 'B') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_3 = "True";
+    } else {
+      answer = "Please select A, B, C, or D for your answer (Not your grade).";
+    }
+    document.getElementById("answer_check_3").innerHTML = answer
+  };
 });
 
-var input_4;
-var answer_4;
+var answered_4 = "False";
 document.getElementById("answer_button_4").addEventListener("click",function() {
-  input_4 = document.getElementById("answer_4").value;
-  if (input_4 === 'A') {
-    answer_4 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_4 === 'C') {
-    answer_4 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_4 == 'D') {
-    answer_4 = "<p class='correct-answer'>Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed.</p>";
-  } else if (input_4 === 'B') {
-    answer_4 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else {
-    answer_4 = "Please select A, B, C, or D for your answer (Not your grade).";
+  if (answered_4 === "False") {
+    input = document.getElementById("answer_4").value;
+    if (input === 'A') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_4 = "True";
+    } else if (input === 'C') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_4 = "True";
+    } else if (input === 'D') {
+      answer = "<p class='correct-answer'>Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed.</p>";
+      answered_4 = "True";
+    } else if (input === 'B') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_4 = "True";
+    } else {
+      answer = "Please select A, B, C, or D for your answer (Not your grade).";
+    };
+    document.getElementById("answer_check_4").innerHTML = answer
   }
-  document.getElementById("answer_check_4").innerHTML = answer_4
 });
 
-var input_5;
-var answer_5;
+var answered_5 = "False";
 document.getElementById("answer_button_5").addEventListener("click",function() {
-  input_5 = document.getElementById("answer_5").value;
-  if (input_5 === 'A') {
-    answer_5 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_5 === 'D') {
-    answer_5 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else if (input_5 == 'C') {
-    answer_5 = "<p class='correct-answer'>Correct! Hitler thought: 'A few human lives don't matter when the nation being strong is at stake'.<br>The Italians had a similar feeling. Mussolini's famous quote: <em>'Everything inside the state; nothing outside the state; nothing against the state.'</em></p>";
-  } else if (input_5 === 'B') {
-    answer_5 = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
-  } else {
-    answer_5 = "Please select A, B, C, or D for your answer (Not your grade).";
-  }
-  document.getElementById("answer_check_5").innerHTML = answer_5
+  if (answered_5 === "False") {
+    input = document.getElementById("answer_5").value;
+    if (input === 'A') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_5 = "True";
+    } else if (input === 'D') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_5 = "True";
+    } else if (input === 'C') {
+      answer = "<p class='correct-answer'>Correct! Hitler thought: 'A few human lives don't matter when the nation being strong is at stake'.<br>The Italians had a similar feeling. Mussolini's famous quote: <em>'Everything inside the state; nothing outside the state; nothing against the state.'</em></p>";
+      answered_5 = "True";
+    } else if (input === 'B') {
+      answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
+      answered_5 = "True";
+    } else {
+      answer = "Please select A, B, C, or D for your answer (Not your grade).";
+    }
+    document.getElementById("answer_check_5").innerHTML = answer
+  };
 });
