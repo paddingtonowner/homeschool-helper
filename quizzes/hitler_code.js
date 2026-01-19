@@ -4,19 +4,21 @@ var num = 0;
 var num_answered = 0;
 
 var run_grader = function() {
-  var ratio = num/num_answered;
-  if(ratio < 0.25) {
-    var _answer = "n F";
-  } else if (ratio < 0.5) {
-    var _answer = " D";
-  } else if (ratio < 0.75) {
-    var _answer = " C";
-  } else if (ratio < 1) {
-    var _answer = " B";
-  } else {
-    var _answer = "n A";
+  if (num_answered === 5) {
+    var ratio = num/num_answered;
+    if(ratio < 0.25) {
+      var _answer = "n F";
+    } else if (ratio < 0.5) {
+      var _answer = " D";
+    } else if (ratio < 0.75) {
+      var _answer = " C";
+    } else if (ratio < 1) {
+      var _answer = " B";
+    } else {
+      var _answer = "n A";
+    };
+    document.getElementById("grade").innerHTML = "Your grade is a"+_answer
   };
-  document.getElementById("grade").innerHTML = "Your grade is a"+_answer
 };
 
 var answered_1 = "False";
