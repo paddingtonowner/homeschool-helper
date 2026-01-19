@@ -6,17 +6,17 @@ var num_answered = 0;
 var run_grader = function() {
   var ratio = num/num_answered;
   if(ratio < 0.25) {
-    answer = "n F";
+    var _answer = "n F";
   } else if (ratio < 0.5) {
-    answer = " D";
+    var _answer = " D";
   } else if (ratio < 0.75) {
-    answer = " C";
+    var _answer = " C";
   } else if (ratio < 1) {
-    answer = " B";
+    var _answer = " B";
   } else {
-    answer = "n A";
+    var _answer = "n A";
   };
-  document.getElementById("grade").innerHTML = "Your grade is a${answer}"
+  document.getElementById("grade").innerHTML = "Your grade is a"+_answer
 };
 
 var answered_1 = "False";
