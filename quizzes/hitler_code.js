@@ -39,8 +39,8 @@ document.getElementById("answer_button_1").addEventListener("click",function() {
     } else if (input === 'B') {
       answer = "<p class='correct-answer'>Correct! The Americans, after being forced into war, went on to win, and probably bred a lot of resentment in doing so.</p>";
       answered_1 = "True";
-      run_grader();
       num++
+      run_grader();
     } else {
       answer = "Please select A, B, C, or D for your answer (Not your grade).";
     }
@@ -64,8 +64,8 @@ document.getElementById("answer_button_2").addEventListener("click",function() {
     } else if (input === 'D') {
       answer = "<p class='correct-answer'>Nice job remembering the alliances! The Italians had a similar belief to the Germans', but the Japanese just saw the alliance as a helpful weapon.</p>";
       answered_2 = "True";
-      run_grader();
       num++
+      run_grader();
     } else if (input === 'B') {
       answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
       answered_2 = "True";
@@ -85,8 +85,8 @@ document.getElementById("answer_button_3").addEventListener("click",function() {
     if (input === 'A') {
       answer = "<p class='correct-answer'>Correct! Hitler thought that the <em>true</em> Germans had been too watered down with other races.</p>";
       answered_3 = "True";
-      run_grader();
       num++
+      run_grader();
     } else if (input === 'C') {
       answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
       answered_3 = "True";
@@ -122,8 +122,8 @@ document.getElementById("answer_button_4").addEventListener("click",function() {
     } else if (input === 'D') {
       answer = "<p class='correct-answer'>Correct! Hitler put the non-Germans into concentration camps, and those who couldn't were killed.</p>";
       answered_4 = "True";
-      run_grader();
       num++
+      run_grader();
     } else if (input === 'B') {
       answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
       answered_4 = "True";
@@ -151,8 +151,8 @@ document.getElementById("answer_button_5").addEventListener("click",function() {
     } else if (input === 'C') {
       answer = "<p class='correct-answer'>Correct! Hitler thought: 'A few human lives don't matter when the nation being strong is at stake'.<br>The Italians had a similar feeling. Mussolini's famous quote: <em>'Everything inside the state; nothing outside the state; nothing against the state.'</em></p>";
       answered_5 = "True";
-      run_grader();
       num++
+      run_grader();
     } else if (input === 'B') {
       answer = "<p class='wrong-answer'>Wrong answer. Try again.</p>";
       answered_5 = "True";
